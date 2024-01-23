@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0D53265B-9825-A784-9174-BA88B77283CE" name="PROPERTY">
+<createdBy>student</createdBy>
+<createdTime>2023-04-30 14:17:15 UTC</createdTime>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="property_id" id="33544627-02B0-C000-45FF-D17B4FFC5C39">
+<createdBy>student</createdBy>
+<createdTime>2023-04-30 14:18:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Property id number ]]></commentInRDBMS>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="street_id" id="1C0218ED-B9F8-6086-A803-3A59D2934BCD">
+<createdBy>student</createdBy>
+<createdTime>2023-05-02 03:42:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[The street id]]></commentInRDBMS>
+<generatorID>74E16C8F-7CC3-3D7E-7B73-1D74DD6D3218</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<referedAttribute>5D133EE4-8E59-81AF-5A23-F76FF2BF68A7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="author_name " id="ABC473B4-43CD-F56C-557C-78A5C0D3FF95">
+<createdBy>student</createdBy>
+<createdTime>2023-05-02 03:42:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[The authority name ]]></commentInRDBMS>
+<generatorID>74E16C8F-7CC3-3D7E-7B73-1D74DD6D3218</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<referedAttribute>666F29ED-97C9-00C8-FCB2-5793AF44E4F1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3F00E7BE-0A5F-854A-2C98-24BCF948E92E" name="PROPERTY PK">
+<createdBy>student</createdBy>
+<createdTime>2023-04-30 14:18:49 UTC</createdTime>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>33544627-02B0-C000-45FF-D17B4FFC5C39</attributeRef>
+<attributeRef>1C0218ED-B9F8-6086-A803-3A59D2934BCD</attributeRef>
+<attributeRef>ABC473B4-43CD-F56C-557C-78A5C0D3FF95</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

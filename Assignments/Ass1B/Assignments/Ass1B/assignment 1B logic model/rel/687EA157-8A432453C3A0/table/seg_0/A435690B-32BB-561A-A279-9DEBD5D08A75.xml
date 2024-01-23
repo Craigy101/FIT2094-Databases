@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A435690B-32BB-561A-A279-9DEBD5D08A75" name="AUTHORITY">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<generatorID>837B9510-7785-CAFD-16AC-1F81BBD1B2D1</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="author_name" id="3701F670-7B58-238A-9B6D-017A54209C61">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[The authority name ]]></commentInRDBMS>
+<generatorID>74ACD80D-41F7-AE7D-5841-AB2496BC822C</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="author_ceo_fname" id="A00BDF0E-F636-63C3-B387-BA29DA7FB26E">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[authority chief executive officer first name ]]></commentInRDBMS>
+<generatorID>BED0823C-9EA4-153C-ED5C-CA6FBA32A02B</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="author_ceo_lname" id="B1DA5453-686A-A217-0397-F53DE80222C0">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[authority chief executive officer last name ]]></commentInRDBMS>
+<generatorID>2AB58F29-9785-6C3C-3F22-AC0C2A9B7C05</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="author_phone" id="05ABD120-C971-8CC8-C90F-7231245AE5C9">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[authority phone number ]]></commentInRDBMS>
+<generatorID>95ACDD48-EA2E-A488-B97E-67690A6338C9</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="author_total_area" id="760C1A62-A38C-C7EA-5CD8-7B2F868EC46A">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[authority total area]]></commentInRDBMS>
+<generatorID>B1D35644-AAF4-3E25-FD7F-51306E376AE3</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="author_street_area" id="548429EE-20B7-5DA0-90AF-70891875BD20">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[street area ]]></commentInRDBMS>
+<generatorID>106E1C51-44AB-F519-E25D-A5770AA8156C</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="author_type" id="7A7F653F-9EFC-5683-32DB-2DCF7D79CA6C">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:53:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[type of authority]]></commentInRDBMS>
+<generatorID>E2F8FD7A-358A-7BC9-FCA1-615D54AB5CF4</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<constraintName>list of types</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<listOfValues>
+<valueDef value="Borough" description="type of auth"/>
+<valueDef value="City" description="type of auth"/>
+<valueDef value="District Council" description="type of auth"/>
+<valueDef value="Shire" description="type of auth"/>
+<valueDef value="Town" description="type of auth"/>
+</listOfValues>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2FF5EBD7-E012-A8D5-6549-F87E4DDB16B5" name="AUTHORITY_PK">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<generatorID>7091404A-F7B4-E96E-C462-572EB356FCD1</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3701F670-7B58-238A-9B6D-017A54209C61"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

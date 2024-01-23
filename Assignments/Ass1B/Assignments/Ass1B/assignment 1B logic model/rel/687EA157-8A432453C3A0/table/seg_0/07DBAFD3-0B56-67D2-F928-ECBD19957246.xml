@@ -1,0 +1,127 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="07DBAFD3-0B56-67D2-F928-ECBD19957246" name="STREET">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<generatorID>7FC5BE2F-7286-ACC4-835E-62962441DA96</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="street_id" id="821DB320-77F8-D5BE-3AAE-25D062879ABA">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[The street id]]></commentInRDBMS>
+<generatorID>5D133EE4-8E59-81AF-5A23-F76FF2BF68A7</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="street_name" id="CF9A85FA-387A-3D0C-D648-4B5ED6EF2369">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[The name of the street]]></commentInRDBMS>
+<generatorID>6154D344-7E30-81C8-0E19-548D879DDF75</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="street_length" id="E5CE7D98-61FC-0FF1-274C-32078CF5F7F6">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[The length of street]]></commentInRDBMS>
+<generatorID>18E3EEB3-2676-614A-C69F-F75E680D09BA</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="street_road_surface_type" id="32C4F743-BC69-C09D-BB5D-53334DC69003">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[The road surface type]]></commentInRDBMS>
+<generatorID>B9BABB05-127F-6ADA-BCDD-5F5DE7E7ECE6</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<constraintName>set types</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<listOfValues>
+<valueDef value="Asphalt" description="asphalt type"/>
+<valueDef value="Concrete" description="concrete type"/>
+<valueDef value="Unsealed" description="unsealed type"/>
+</listOfValues>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="street_lanes_num" id="D798979D-E580-6B57-0C3E-A40EC9416C01">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[the number of lane in one street]]></commentInRDBMS>
+<generatorID>4024B91A-9579-AC06-5739-985F5D5B089F</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="author_name" id="996FC7C4-34D8-F5C6-41D7-17282F2E3EEA">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[The authority name ]]></commentInRDBMS>
+<generatorID>666F29ED-97C9-00C8-FCB2-5793AF44E4F1</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9547634D-961C-1CD2-CB5E-250B6BFCED33" referredColumn="3701F670-7B58-238A-9B6D-017A54209C61"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D7D48A6D-B746-DD67-C996-12B4E2FA5996" name="STREET_PK">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<generatorID>666729DB-60B2-9682-2EE1-903F9F388A6A</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="821DB320-77F8-D5BE-3AAE-25D062879ABA"/>
+<colUsage columnID="996FC7C4-34D8-F5C6-41D7-17282F2E3EEA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="214D2CFF-0BA5-74D8-FD18-95AC39B0BFF2" name="AUTHORITY-STREET">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<generatorID>2E4DDF96-A927-B2DB-F25D-623BA0E9B29A</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="996FC7C4-34D8-F5C6-41D7-17282F2E3EEA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

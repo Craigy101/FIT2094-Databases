@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1E9656E1-105D-ED1D-B2AA-DBE7DDCDE3CC" name="CONTRACT">
+<createdBy>student</createdBy>
+<createdTime>2023-04-30 14:26:07 UTC</createdTime>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="contra_no" id="6F8D9E2E-9C6E-DBC8-0C8A-191CAFE6D190">
+<createdBy>student</createdBy>
+<createdTime>2023-04-30 14:26:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[contract number]]></commentInRDBMS>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="contra_date_start" id="9A3BDC54-F962-63F7-25D5-A087A4D636E7">
+<createdBy>student</createdBy>
+<createdTime>2023-04-30 14:26:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[contract start date]]></commentInRDBMS>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="contra_date_end" id="A2F248D3-1A57-4954-6C1D-72CAD67D1483">
+<createdBy>student</createdBy>
+<createdTime>2023-04-30 14:26:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[contract end date ]]></commentInRDBMS>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="contra_collection_frequency" id="5BE1648E-CDDE-26AB-7D18-0CC1BB3726B9">
+<createdBy>student</createdBy>
+<createdTime>2023-05-02 03:18:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[bin collection frequency]]></commentInRDBMS>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<constraintName>frequency</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<listOfValues>
+<valueDef value="Fortnightly" description="Fortnightly collection"/>
+<valueDef value="Monthly" description="Montly collection"/>
+<valueDef value="Weekly" description="Weekly collection"/>
+</listOfValues>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="author_name " id="4F69A9E6-C152-D919-1521-05B9F89417B8">
+<createdBy>student</createdBy>
+<createdTime>2023-05-02 10:04:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[The authority name ]]></commentInRDBMS>
+<generatorID>C8CD8576-4172-A6D8-4417-6D7FBC6DCC3C</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<referedAttribute>74ACD80D-41F7-AE7D-5841-AB2496BC822C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="71C4382B-8FD9-B4FD-CBD7-80D755B70FB3" name="CONTRACT PK">
+<createdBy>student</createdBy>
+<createdTime>2023-04-30 14:35:56 UTC</createdTime>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6F8D9E2E-9C6E-DBC8-0C8A-191CAFE6D190</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

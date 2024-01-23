@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F6A7A63F-0D03-67E5-79BD-D865637439A9" name="PROPERTY">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<generatorID>0D53265B-9825-A784-9174-BA88B77283CE</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="property_id" id="C69A6991-7002-21E2-6801-74ABE010E9BA">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Property id number ]]></commentInRDBMS>
+<generatorID>33544627-02B0-C000-45FF-D17B4FFC5C39</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="street_id" id="A34C4539-5B0F-2E38-A08C-E1E05624ED2B">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[The street id]]></commentInRDBMS>
+<generatorID>1C0218ED-B9F8-6086-A803-3A59D2934BCD</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CEAEEBCC-ACEA-5850-D6B7-06C3F733DC19" referredColumn="821DB320-77F8-D5BE-3AAE-25D062879ABA"/>
+</associations>
+</Column>
+<Column name="author_name" id="BDB7080E-A817-57C5-7740-B39659EEED12">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[The authority name ]]></commentInRDBMS>
+<generatorID>ABC473B4-43CD-F56C-557C-78A5C0D3FF95</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CEAEEBCC-ACEA-5850-D6B7-06C3F733DC19" referredColumn="996FC7C4-34D8-F5C6-41D7-17282F2E3EEA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7B7F1070-D55E-C086-2918-6817D158ED24" name="PROPERTY_PK">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<generatorID>3F00E7BE-0A5F-854A-2C98-24BCF948E92E</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C69A6991-7002-21E2-6801-74ABE010E9BA"/>
+<colUsage columnID="A34C4539-5B0F-2E38-A08C-E1E05624ED2B"/>
+<colUsage columnID="BDB7080E-A817-57C5-7740-B39659EEED12"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="06BEFB05-2565-FC5B-CD09-5299E72A5A4F" name="STREET-PROPERTY">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<generatorID>74E16C8F-7CC3-3D7E-7B73-1D74DD6D3218</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A34C4539-5B0F-2E38-A08C-E1E05624ED2B"/>
+<colUsage columnID="BDB7080E-A817-57C5-7740-B39659EEED12"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

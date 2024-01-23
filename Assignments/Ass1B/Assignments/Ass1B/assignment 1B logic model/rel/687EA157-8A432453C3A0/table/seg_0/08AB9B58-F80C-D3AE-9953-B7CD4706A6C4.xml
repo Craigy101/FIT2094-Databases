@@ -1,0 +1,132 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="08AB9B58-F80C-D3AE-9953-B7CD4706A6C4" name="APPROVE">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<generatorID>DE6FBE97-E4F7-273C-CC81-AF112CFA0BB2</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ap_no" id="BA018C7A-F111-B0E8-AA77-E238D93859CF">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[surrogate key of approve]]></commentInRDBMS>
+<generatorID>EB5C2EEA-AE12-ADBA-F362-DEB19066EEE0</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="approve_date" id="63AEB2BC-4351-D2F3-84A1-F0AB562B1B0E">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[The date of approved ]]></commentInRDBMS>
+<generatorID>5969BAE0-D1B8-FF46-660D-7ED37CEE6F4D</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="truck_vin" id="2552CD18-7FC7-FCB7-AC84-10803600D2CB">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Truck's vin]]></commentInRDBMS>
+<generatorID>6B76D5AD-F34D-A75B-2827-C2EE53181F4A</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="78F4CB24-3F87-F62F-732C-B9E262ED932A" referredColumn="BA942392-68E7-7D6D-94E0-0D3A62254142"/>
+</associations>
+</Column>
+<Column name="driver_no" id="4698AF35-7B3B-7D31-FC39-9995F1D40749">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Driver number]]></commentInRDBMS>
+<generatorID>F2E7953D-59C9-31B1-E872-115973371915</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8CDF318C-03F9-F57B-7565-E411987FDEA1" referredColumn="FAE9BE35-E4A5-55FB-4E53-727664932E52"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="083CB9CF-21CA-BC28-E6F8-FB10254162BB" name="APPROVE_PK">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<generatorID>12892E1D-59A0-A09B-B243-8C9AEA5F921F</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BA018C7A-F111-B0E8-AA77-E238D93859CF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4E1A7115-71C5-A9C0-CF75-561A56C9DE42" name="Approve_nk">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<generatorID>7FBC5D77-B50C-AD8D-C116-B03ECC9C4390</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="63AEB2BC-4351-D2F3-84A1-F0AB562B1B0E"/>
+<colUsage columnID="2552CD18-7FC7-FCB7-AC84-10803600D2CB"/>
+<colUsage columnID="4698AF35-7B3B-7D31-FC39-9995F1D40749"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="664A561C-F833-594B-FB2C-6ED7E867738F" name="APPROVE__IDX">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>85D57D47-CB3D-EC84-9900-80E5D2158784</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="4698AF35-7B3B-7D31-FC39-9995F1D40749"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="17399ED4-940B-D04A-421C-FA17324EA0C9" name="DRIVER-APPROVE">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<generatorID>85D57D47-CB3D-EC84-9900-80E5D2158784</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4698AF35-7B3B-7D31-FC39-9995F1D40749"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="80D826B5-20DD-38BF-0F1D-0FE3F73476F6" name="TRUCK_APPROVE">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<generatorID>A1AE2282-8370-5C9F-A6D9-DE8EE0FFD8AC</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2552CD18-7FC7-FCB7-AC84-10803600D2CB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

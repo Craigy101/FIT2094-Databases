@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7FC5BE2F-7286-ACC4-835E-62962441DA96" name="STREET">
+<createdBy>student</createdBy>
+<createdTime>2023-04-30 14:13:10 UTC</createdTime>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="street_id" id="5D133EE4-8E59-81AF-5A23-F76FF2BF68A7">
+<createdBy>student</createdBy>
+<createdTime>2023-04-30 14:13:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[The street id]]></commentInRDBMS>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="street_name" id="6154D344-7E30-81C8-0E19-548D879DDF75">
+<createdBy>student</createdBy>
+<createdTime>2023-04-30 14:13:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[The name of the street]]></commentInRDBMS>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="street_length" id="18E3EEB3-2676-614A-C69F-F75E680D09BA">
+<createdBy>student</createdBy>
+<createdTime>2023-04-30 14:13:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[The length of street]]></commentInRDBMS>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="street_road_surface_type" id="B9BABB05-127F-6ADA-BCDD-5F5DE7E7ECE6">
+<createdBy>student</createdBy>
+<createdTime>2023-04-30 14:14:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[The road surface type]]></commentInRDBMS>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<constraintName>set types</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<listOfValues>
+<valueDef value="Asphalt" description="asphalt type"/>
+<valueDef value="Concrete" description="concrete type"/>
+<valueDef value="Unsealed" description="unsealed type"/>
+</listOfValues>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="street_lanes_num" id="4024B91A-9579-AC06-5739-985F5D5B089F">
+<createdBy>student</createdBy>
+<createdTime>2023-04-30 14:16:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[the number of lane in one street]]></commentInRDBMS>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="author_name " id="666F29ED-97C9-00C8-FCB2-5793AF44E4F1">
+<createdBy>student</createdBy>
+<createdTime>2023-05-02 00:07:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[The authority name ]]></commentInRDBMS>
+<generatorID>2E4DDF96-A927-B2DB-F25D-623BA0E9B29A</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<referedAttribute>74ACD80D-41F7-AE7D-5841-AB2496BC822C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="666729DB-60B2-9682-2EE1-903F9F388A6A" name="STREET PK">
+<createdBy>student</createdBy>
+<createdTime>2023-04-30 14:13:33 UTC</createdTime>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5D133EE4-8E59-81AF-5A23-F76FF2BF68A7</attributeRef>
+<attributeRef>666F29ED-97C9-00C8-FCB2-5793AF44E4F1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

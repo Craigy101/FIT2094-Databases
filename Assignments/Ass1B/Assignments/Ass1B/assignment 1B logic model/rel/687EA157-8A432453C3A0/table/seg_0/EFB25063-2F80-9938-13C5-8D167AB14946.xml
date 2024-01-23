@@ -1,0 +1,247 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EFB25063-2F80-9938-13C5-8D167AB14946" name="BIN">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<generatorID>97409745-5C6A-97C0-DA54-6938EFEA1288</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="bin_tag_rfid" id="716175A3-2324-3C97-B355-BC587B972B4A">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[bin RFID tag]]></commentInRDBMS>
+<generatorID>13023D98-D190-CAF5-8959-2A2ABB70295B</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bin_kg" id="2A45AB9D-C6EF-BADF-C797-6F6AF77D7C95">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[The collected weight of the bin]]></commentInRDBMS>
+<generatorID>00EDD954-F49F-1335-B16C-5BABE94F8A1F</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bin_replace_reason" id="ECC5F67E-45E5-C0B1-7427-4B3B962804E2">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[The reason of replacement of bin]]></commentInRDBMS>
+<generatorID>DA8D2E6E-2528-4FA3-C226-612C26F6A1D1</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<constraintName>fixed list</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<listOfValues>
+<valueDef value="" description=""/>
+<valueDef value="Bin Failure (fair use eg. old age)" description="reason 2"/>
+<valueDef value="Damaged by owner" description="reason 1"/>
+<valueDef value="Damaged during pickup of waste" description="reason 3"/>
+<valueDef value="Stolen" description="reason 4"/>
+</listOfValues>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bin_date_supply" id="10598496-6096-C44C-E598-EBF96B772C07">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[The suppliy date of bin]]></commentInRDBMS>
+<generatorID>14C6D888-E56E-BE8D-27D8-7F340E6AE5F8</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="property_id" id="0FA4511D-D973-EA19-A4AD-9F0319B41E69">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Property id number ]]></commentInRDBMS>
+<generatorID>7F963239-18A3-B6F3-BB8D-08E21247B34C</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E1432364-58EC-936B-A9AB-395426F18921" referredColumn="C69A6991-7002-21E2-6801-74ABE010E9BA"/>
+</associations>
+</Column>
+<Column name="bin_overweight" id="1651F66D-9A5B-448D-6180-40B2148A7BD7">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[The record of the bin is owerweight by input (Y or N)]]></commentInRDBMS>
+<generatorID>3F2D75E4-6A19-928B-655B-E9EEF94260A6</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<constraintName>overweight</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="N" description="Not over weight"/>
+<valueDef value="Y" description="Overweight"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="street_id" id="788A9ED1-D09C-ACD2-B1B6-24BAFA8F464D">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[The street id]]></commentInRDBMS>
+<generatorID>D23F46AD-3D0E-3560-40E2-06B7454BA044</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E1432364-58EC-936B-A9AB-395426F18921" referredColumn="A34C4539-5B0F-2E38-A08C-E1E05624ED2B"/>
+</associations>
+</Column>
+<Column name="author_name" id="6E2D1284-483C-BF6E-ED1E-D99D0AE7837E">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[The authority name ]]></commentInRDBMS>
+<generatorID>23D70661-4A27-3D9B-AB30-7F85A21DEAB6</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E1432364-58EC-936B-A9AB-395426F18921" referredColumn="BDB7080E-A817-57C5-7740-B39659EEED12"/>
+</associations>
+</Column>
+<Column name="ct.no" id="F93D3838-D0CD-D9DD-E02C-13D94AAD6B92">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[collection surrogate key]]></commentInRDBMS>
+<generatorID>A3195F95-74EB-9975-302E-3C9DFA97999B</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="937CD8C6-36A2-45C4-4AF6-D50572349DBE" referredColumn="5227EAAB-F85F-706D-65D2-A7A0BB53B3D3"/>
+</associations>
+</Column>
+<Column name="bin_size" id="D7099A14-98CB-2555-AF98-922E1ACA4308">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[the size of type of bin]]></commentInRDBMS>
+<generatorID>E7AB8C36-13EE-2F56-517C-C6201BB97C90</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DF40B4A2-53FC-0BE8-BE2E-2FA575DB16FD" referredColumn="64EA04BC-EA5A-EB1F-A303-2518CAF56783"/>
+</associations>
+</Column>
+<Column name="waste_type_id" id="179B0BA1-F17D-2263-5060-EED1F658B4C0">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Waste type id ]]></commentInRDBMS>
+<generatorID>01A5E14A-D1FC-9F41-CA03-509B2098F4A9</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DF40B4A2-53FC-0BE8-BE2E-2FA575DB16FD" referredColumn="AF512F23-0C7A-CD13-8632-6BEBAEF7821C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="458FC6F9-2449-9A32-2F97-11B028F24B08" name="BIN_PK">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<generatorID>A619705A-7936-7277-A283-76D68CE3251A</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="716175A3-2324-3C97-B355-BC587B972B4A"/>
+<colUsage columnID="2A45AB9D-C6EF-BADF-C797-6F6AF77D7C95"/>
+<colUsage columnID="D7099A14-98CB-2555-AF98-922E1ACA4308"/>
+<colUsage columnID="179B0BA1-F17D-2263-5060-EED1F658B4C0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AFB62E6E-CED9-2AE3-D8D9-8758EAB3ECAA" name="Binype_to_bin">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<generatorID>7ED27B81-D44C-C7F2-C8EF-4336DB032F4D</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D7099A14-98CB-2555-AF98-922E1ACA4308"/>
+<colUsage columnID="179B0BA1-F17D-2263-5060-EED1F658B4C0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4E036FDC-4CD8-A789-6195-8B7F446B8BE6" name="CONTRACT_COLLECTION-BIN">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<generatorID>F89FBB44-4898-9FE6-6F38-CEC5F41BD733</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F93D3838-D0CD-D9DD-E02C-13D94AAD6B92"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C7195A01-3B9C-6AD4-F09C-388EA01CB64C" name="PROPERTY_-_BIN">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<generatorID>0A448A00-3D73-5D34-AFCB-1B85BE36C6B5</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0FA4511D-D973-EA19-A4AD-9F0319B41E69"/>
+<colUsage columnID="788A9ED1-D09C-ACD2-B1B6-24BAFA8F464D"/>
+<colUsage columnID="6E2D1284-483C-BF6E-ED1E-D99D0AE7837E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3315EF88-960C-12EA-5519-FBF862F4B987" name="CONTRACT">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<generatorID>1E9656E1-105D-ED1D-B2AA-DBE7DDCDE3CC</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="contra_no" id="4638520F-7BB0-AC44-C801-5A71F5C0E60F">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[contract number]]></commentInRDBMS>
+<generatorID>6F8D9E2E-9C6E-DBC8-0C8A-191CAFE6D190</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="contra_date_start" id="9580014C-A500-82C0-F077-322214E32258">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[contract start date]]></commentInRDBMS>
+<generatorID>9A3BDC54-F962-63F7-25D5-A087A4D636E7</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="contra_date_end" id="87148E60-9956-3A4D-A9DC-981F24D134BC">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[contract end date ]]></commentInRDBMS>
+<generatorID>A2F248D3-1A57-4954-6C1D-72CAD67D1483</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="contra_collection_frequency" id="35C669F5-6FA1-531C-8F69-21DAF95355C9">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[bin collection frequency]]></commentInRDBMS>
+<generatorID>5BE1648E-CDDE-26AB-7D18-0CC1BB3726B9</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<constraintName>frequency</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<listOfValues>
+<valueDef value="Fortnightly" description="Fortnightly collection"/>
+<valueDef value="Monthly" description="Montly collection"/>
+<valueDef value="Weekly" description="Weekly collection"/>
+</listOfValues>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="author_name" id="7A45698E-B145-7748-247D-B10D39533F30">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[The authority name ]]></commentInRDBMS>
+<generatorID>4F69A9E6-C152-D919-1521-05B9F89417B8</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5F7610E8-63B1-3E62-E913-DEFAB231D97E" referredColumn="3701F670-7B58-238A-9B6D-017A54209C61"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7B80704B-224E-FE43-E035-C3A124858E6F" name="CONTRACT_PK">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<generatorID>71C4382B-8FD9-B4FD-CBD7-80D755B70FB3</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4638520F-7BB0-AC44-C801-5A71F5C0E60F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="363D4BDF-652F-90F4-7C99-EAA54F7B136C" name="AUTHORITY-CONTRACT">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<generatorID>C8CD8576-4172-A6D8-4417-6D7FBC6DCC3C</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7A45698E-B145-7748-247D-B10D39533F30"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

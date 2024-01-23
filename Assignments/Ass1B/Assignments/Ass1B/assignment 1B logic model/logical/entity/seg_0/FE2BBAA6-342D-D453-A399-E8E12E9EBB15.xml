@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FE2BBAA6-342D-D453-A399-E8E12E9EBB15" name="DRIVER">
+<createdBy>student</createdBy>
+<createdTime>2023-05-02 02:00:22 UTC</createdTime>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="driver_no" id="68FFD5F5-29D1-3AA4-3A4C-6A55043DE33E">
+<createdBy>student</createdBy>
+<createdTime>2023-05-02 02:00:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[Driver number]]></commentInRDBMS>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="driver_licen_no" id="3BBA2E0B-FE74-73BF-984A-C4EBB66843EB">
+<createdBy>student</createdBy>
+<createdTime>2023-05-02 02:00:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Driver licence number]]></commentInRDBMS>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="driver_name" id="81B1A2F2-F6FF-2F34-1243-013F0E99AE60">
+<createdBy>student</createdBy>
+<createdTime>2023-05-02 02:01:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[driver's name ]]></commentInRDBMS>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="driver_dob" id="1B7A8758-9FCD-9781-4479-68FAEBE306E0">
+<createdBy>student</createdBy>
+<createdTime>2023-05-02 02:01:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[driver's date of birth]]></commentInRDBMS>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="driver_tfn" id="2EAA2BF0-4A23-164F-AD55-814BA22590C0">
+<createdBy>student</createdBy>
+<createdTime>2023-05-02 02:03:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[driver's texfile number]]></commentInRDBMS>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="driver_phone" id="CBD652E3-B8C3-35B9-F600-1ED09BBA1061">
+<createdBy>student</createdBy>
+<createdTime>2023-05-02 06:08:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[driver's phone number]]></commentInRDBMS>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9A2FE6E1-71E7-D840-97D4-95F73C0CCE2E" name="DRIVER PK">
+<createdBy>student</createdBy>
+<createdTime>2023-05-02 02:00:39 UTC</createdTime>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>68FFD5F5-29D1-3AA4-3A4C-6A55043DE33E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

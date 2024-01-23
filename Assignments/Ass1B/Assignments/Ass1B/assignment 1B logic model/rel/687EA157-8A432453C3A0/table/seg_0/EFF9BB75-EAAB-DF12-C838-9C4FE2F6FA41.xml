@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EFF9BB75-EAAB-DF12-C838-9C4FE2F6FA41" name="OWNER_OF_PROPERTY">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<generatorID>54D70945-5DCE-183E-BCCD-F70167730F99</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="owner_id" id="177E4AE8-1C7C-D79D-490B-90157013679E">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Owner id ]]></commentInRDBMS>
+<generatorID>9DBF6245-1944-A989-CD48-7DF67C08CD23</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="143886C1-29EB-FAB7-5FD7-E0CD8FEB5569" referredColumn="B78A96DB-1A88-B95E-D8FD-3A6D423FE9A8"/>
+</associations>
+</Column>
+<Column name="property_id" id="9EEF56A2-E798-1D03-4E87-9CCB61CFF684">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Property id number ]]></commentInRDBMS>
+<generatorID>C765CE1A-27B4-9236-4289-6E7F0AB1EE63</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B7A18DF5-F246-B187-25F9-36C744827EFA" referredColumn="C69A6991-7002-21E2-6801-74ABE010E9BA"/>
+</associations>
+</Column>
+<Column name="street_id" id="54CA5397-4BB3-030E-3982-7D460A878E88">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[The street id]]></commentInRDBMS>
+<generatorID>0BDD0C57-632B-D44F-673A-6153D5EDCE51</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B7A18DF5-F246-B187-25F9-36C744827EFA" referredColumn="A34C4539-5B0F-2E38-A08C-E1E05624ED2B"/>
+</associations>
+</Column>
+<Column name="author_name" id="0CAB6883-1D7E-9B5C-57C7-36EEAEF664F3">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[The authority name ]]></commentInRDBMS>
+<generatorID>A55232D3-B832-57BE-2B50-A5EDF8662BCF</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B7A18DF5-F246-B187-25F9-36C744827EFA" referredColumn="BDB7080E-A817-57C5-7740-B39659EEED12"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6319B80E-C268-0C8A-A48F-8E82AEAD7BC6" name="OWNER_LIST_PK">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<generatorID>C793F564-19DB-323A-6D5D-6E6CC5ADDFEF</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="177E4AE8-1C7C-D79D-490B-90157013679E"/>
+<colUsage columnID="9EEF56A2-E798-1D03-4E87-9CCB61CFF684"/>
+<colUsage columnID="54CA5397-4BB3-030E-3982-7D460A878E88"/>
+<colUsage columnID="0CAB6883-1D7E-9B5C-57C7-36EEAEF664F3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="516D333A-DF65-83D9-E418-F0CE5B420726" name="owner_to_list">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<generatorID>CE321A6B-6B6E-89DE-1713-CFA6139FB2F0</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="177E4AE8-1C7C-D79D-490B-90157013679E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FB4D301A-2EF1-E50E-6D98-E30888F92ECD" name="propertty_to_owner_list">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<generatorID>3D2E914E-FDDC-A886-41F2-312C3220C2AE</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9EEF56A2-E798-1D03-4E87-9CCB61CFF684"/>
+<colUsage columnID="54CA5397-4BB3-030E-3982-7D460A878E88"/>
+<colUsage columnID="0CAB6883-1D7E-9B5C-57C7-36EEAEF664F3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

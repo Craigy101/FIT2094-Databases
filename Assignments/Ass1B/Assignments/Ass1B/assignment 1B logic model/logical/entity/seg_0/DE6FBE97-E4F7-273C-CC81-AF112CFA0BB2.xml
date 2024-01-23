@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DE6FBE97-E4F7-273C-CC81-AF112CFA0BB2" name="APPROVE">
+<createdBy>student</createdBy>
+<createdTime>2023-05-02 02:09:41 UTC</createdTime>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ap_no" id="EB5C2EEA-AE12-ADBA-F362-DEB19066EEE0">
+<createdBy>student</createdBy>
+<createdTime>2023-05-02 10:22:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[surrogate key of approve]]></commentInRDBMS>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="approve_date" id="5969BAE0-D1B8-FF46-660D-7ED37CEE6F4D">
+<createdBy>student</createdBy>
+<createdTime>2023-05-02 02:09:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[The date of approved ]]></commentInRDBMS>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="truck_vin" id="6B76D5AD-F34D-A75B-2827-C2EE53181F4A">
+<createdBy>student</createdBy>
+<createdTime>2023-05-02 10:20:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Truck's vin]]></commentInRDBMS>
+<generatorID>A1AE2282-8370-5C9F-A6D9-DE8EE0FFD8AC</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<referedAttribute>69A3A4E3-B55A-CF58-5C76-7B28BC3C4B6B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="driver_no" id="F2E7953D-59C9-31B1-E872-115973371915">
+<createdBy>student</createdBy>
+<createdTime>2023-05-02 10:22:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Driver number]]></commentInRDBMS>
+<generatorID>85D57D47-CB3D-EC84-9900-80E5D2158784</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<referedAttribute>68FFD5F5-29D1-3AA4-3A4C-6A55043DE33E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="12892E1D-59A0-A09B-B243-8C9AEA5F921F" name="APPROVE PK">
+<createdBy>student</createdBy>
+<createdTime>2023-05-02 02:10:01 UTC</createdTime>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>EB5C2EEA-AE12-ADBA-F362-DEB19066EEE0</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="7FBC5D77-B50C-AD8D-C116-B03ECC9C4390" name="Approve_nk">
+<createdBy>student</createdBy>
+<createdTime>2023-05-02 10:24:14 UTC</createdTime>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="false"/>
+</engineerTo>
+<newElementsIDs>5969BAE0-D1B8-FF46-660D-7ED37CEE6F4D,6B76D5AD-F34D-A75B-2827-C2EE53181F4A,F2E7953D-59C9-31B1-E872-115973371915</newElementsIDs>
+<usedAttributes>
+<attributeRef>5969BAE0-D1B8-FF46-660D-7ED37CEE6F4D</attributeRef>
+<attributeRef>6B76D5AD-F34D-A75B-2827-C2EE53181F4A</attributeRef>
+<attributeRef>F2E7953D-59C9-31B1-E872-115973371915</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,212 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A4899696-B507-2D86-DB61-79AB4289CE1A" name="CONTRACT_COLLECTION">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<generatorID>E317B8C8-A34B-9689-C8B7-1BE03C100CAD</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ct.no" id="5227EAAB-F85F-706D-65D2-A7A0BB53B3D3">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[collection surrogate key]]></commentInRDBMS>
+<generatorID>84160C33-E2CA-20FA-CA08-B9674F931FCA</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="contra_collect_cost" id="3AFE0BF7-5564-59BC-1F08-21E608C13549">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[The waste collection cost]]></commentInRDBMS>
+<generatorID>FE2B5BFC-7116-8806-C04B-133BBAB9F85E</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="contra_no" id="0E8ED589-F91C-429E-6FDA-C84D49989B0D">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[contract number]]></commentInRDBMS>
+<generatorID>29D88D32-3D2A-DA1D-6FAB-652E527CD379</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C187D3B0-EA6A-7030-CCAC-7D945831C025" referredColumn="4638520F-7BB0-AC44-C801-5A71F5C0E60F"/>
+</associations>
+</Column>
+<Column name="contra_collect_date" id="E63C6792-178D-C657-AF28-9766E351F514">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[bin collection date ]]></commentInRDBMS>
+<generatorID>F0BDEEE0-65DB-03D9-5B5A-81023CD15440</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="truck_vin" id="6C25C231-4334-3FA4-EB26-A34D5CB856A0">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Truck's vin]]></commentInRDBMS>
+<generatorID>F5549E9C-1F7F-AEC6-76E2-F118AEC11270</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DDC0639B-340E-10D2-336B-C6D678BEEA94" referredColumn="BA942392-68E7-7D6D-94E0-0D3A62254142"/>
+</associations>
+</Column>
+<Column name="driver_no" id="2118568C-A8CE-92C9-9925-A82D25C611C9">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Driver number]]></commentInRDBMS>
+<generatorID>EA36D43F-BB76-09D5-235B-EB3139678D98</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="36893E3B-6C03-BFC6-07AB-3E33EE6F2D86" referredColumn="FAE9BE35-E4A5-55FB-4E53-727664932E52"/>
+</associations>
+</Column>
+<Column name="waste_type_id" id="B0FD5301-0AC2-7FCD-65DE-B24914602B75">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Waste type id ]]></commentInRDBMS>
+<generatorID>F8DC697B-75B2-BE59-FAA2-121040EBFDE2</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="080C7E9F-2DDC-3604-6CA7-E7A711AD60C4" referredColumn="AA2FD14A-6FD5-67E2-BD83-3C6F144B749A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="126A1479-3D1D-62F3-8C8E-AA07D22D4C20" name="CONTRACT_COLLECTION_COST_PK">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<generatorID>8DA78BD2-B95A-389E-559C-AD0B7933256D</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5227EAAB-F85F-706D-65D2-A7A0BB53B3D3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D8394F18-73F6-C535-0E7E-E82CCC6BFCC4" name="collection_no_nk">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<generatorID>8CEB120D-304E-3642-53D4-52C7CBD99729</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0E8ED589-F91C-429E-6FDA-C84D49989B0D"/>
+<colUsage columnID="E63C6792-178D-C657-AF28-9766E351F514"/>
+<colUsage columnID="B0FD5301-0AC2-7FCD-65DE-B24914602B75"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8C3DCB90-1079-0F19-84A7-632DA7700C32" name="CONTRACT_COLLECTION__IDX">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>B2F6D44E-EA21-F641-3FB2-2D9014C5AFE2</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="2118568C-A8CE-92C9-9925-A82D25C611C9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B15B9FFC-0EC5-A081-E3B1-A58E119070AE" name="CONTRACT_COLLECTION__IDXv1">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>1DC638E3-BA0A-9092-1E69-19E89F2A2828</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="6C25C231-4334-3FA4-EB26-A34D5CB856A0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="07F0AC52-DBA3-216B-F21A-304D88D13B42" name="CONTRACT-CONTRACT_COLLECTION">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<generatorID>2D7F4FB6-8D18-7E61-6A03-06484873F3D7</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0E8ED589-F91C-429E-6FDA-C84D49989B0D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1582EB0B-E3A7-8CEC-15CA-D13395E9A6F8" name="DRIVER-CONTRACT">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<generatorID>B2F6D44E-EA21-F641-3FB2-2D9014C5AFE2</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2118568C-A8CE-92C9-9925-A82D25C611C9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F4B91323-E8FD-E3B1-A66E-FC6CF3F19AB1" name="TRUCK-CONTRACT_COLLECTION">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<generatorID>1DC638E3-BA0A-9092-1E69-19E89F2A2828</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6C25C231-4334-3FA4-EB26-A34D5CB856A0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="68F51A00-E81F-BD9A-BE39-6936A18DF1A3" name="WASTE_TYP-CONTRACT_COLLECTION">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<generatorID>F0D083B1-9446-7BDD-77A9-AAB1BAEEAACE</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B0FD5301-0AC2-7FCD-65DE-B24914602B75"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

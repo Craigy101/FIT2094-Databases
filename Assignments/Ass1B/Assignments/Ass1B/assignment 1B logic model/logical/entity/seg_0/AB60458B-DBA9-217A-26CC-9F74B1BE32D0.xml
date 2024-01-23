@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AB60458B-DBA9-217A-26CC-9F74B1BE32D0" name="CONTRACT BIN SUPPLY">
+<createdBy>student</createdBy>
+<createdTime>2023-04-30 14:29:04 UTC</createdTime>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cost_supply" id="5AE729F9-18AC-7A55-2678-824972BECE38">
+<createdBy>student</createdBy>
+<createdTime>2023-04-30 14:29:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[bin supply cost]]></commentInRDBMS>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="contra_no" id="BA38A3B3-7E55-A71D-06EF-54EBD844B500">
+<createdBy>student</createdBy>
+<createdTime>2023-05-02 03:11:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[contract number]]></commentInRDBMS>
+<generatorID>6CD250D2-BB6B-0037-B65A-0AFB93CFC027</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<referedAttribute>6F8D9E2E-9C6E-DBC8-0C8A-191CAFE6D190</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bin_size" id="7EF431D6-F1E8-A2FB-33B7-7F6FF2A4CF3D">
+<createdBy>student</createdBy>
+<createdTime>2023-05-02 06:03:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[the size of type of bin]]></commentInRDBMS>
+<generatorID>67355923-F160-CD83-3E0C-515B9DF42773</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<referedAttribute>DB49A183-1813-C750-F8AF-B0D041760414</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="waste_type_id" id="FFBC2912-DB8D-5C2F-FA60-31E5EFA69100">
+<createdBy>student</createdBy>
+<createdTime>2023-05-02 23:51:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Waste type id ]]></commentInRDBMS>
+<generatorID>67355923-F160-CD83-3E0C-515B9DF42773</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<referedAttribute>862ADEDC-ADDA-0E95-5CFA-C14D66AE7E55</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F46DCE8F-7EB2-7F36-A59C-1A7E09BEF399" name="CONTRACT BIN SUPPL:Y PK">
+<createdBy>student</createdBy>
+<createdTime>2023-04-30 14:36:48 UTC</createdTime>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BA38A3B3-7E55-A71D-06EF-54EBD844B500</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

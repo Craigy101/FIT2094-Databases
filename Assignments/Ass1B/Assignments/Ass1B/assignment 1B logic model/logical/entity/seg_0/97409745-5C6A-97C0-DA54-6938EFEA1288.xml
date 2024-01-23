@@ -1,0 +1,217 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="97409745-5C6A-97C0-DA54-6938EFEA1288" name="BIN">
+<createdBy>student</createdBy>
+<createdTime>2023-04-30 14:23:19 UTC</createdTime>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="bin_tag_rfid" id="13023D98-D190-CAF5-8959-2A2ABB70295B">
+<createdBy>student</createdBy>
+<createdTime>2023-04-30 14:23:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[bin RFID tag]]></commentInRDBMS>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bin_kg" id="00EDD954-F49F-1335-B16C-5BABE94F8A1F">
+<createdBy>student</createdBy>
+<createdTime>2023-05-02 06:07:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[The collected weight of the bin]]></commentInRDBMS>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bin_replace_reason" id="DA8D2E6E-2528-4FA3-C226-612C26F6A1D1">
+<createdBy>student</createdBy>
+<createdTime>2023-04-30 14:24:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[The reason of replacement of bin]]></commentInRDBMS>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<constraintName>fixed list</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<listOfValues>
+<valueDef value="" description=""/>
+<valueDef value="Bin Failure (fair use eg. old age)" description="reason 2"/>
+<valueDef value="Damaged by owner" description="reason 1"/>
+<valueDef value="Damaged during pickup of waste" description="reason 3"/>
+<valueDef value="Stolen" description="reason 4"/>
+</listOfValues>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bin_date_supply" id="14C6D888-E56E-BE8D-27D8-7F340E6AE5F8">
+<createdBy>student</createdBy>
+<createdTime>2023-04-30 14:25:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[The suppliy date of bin]]></commentInRDBMS>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="property_id" id="7F963239-18A3-B6F3-BB8D-08E21247B34C">
+<createdBy>student</createdBy>
+<createdTime>2023-05-02 03:40:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[Property id number ]]></commentInRDBMS>
+<generatorID>0A448A00-3D73-5D34-AFCB-1B85BE36C6B5</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<referedAttribute>33544627-02B0-C000-45FF-D17B4FFC5C39</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bin_overweight" id="3F2D75E4-6A19-928B-655B-E9EEF94260A6">
+<createdBy>student</createdBy>
+<createdTime>2023-05-02 06:07:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[The record of the bin is owerweight by input (Y or N)]]></commentInRDBMS>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<constraintName>overweight</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="N" description="Not over weight"/>
+<valueDef value="Y" description="Overweight"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="street_id" id="D23F46AD-3D0E-3560-40E2-06B7454BA044">
+<createdBy>student</createdBy>
+<createdTime>2023-05-02 08:42:13 UTC</createdTime>
+<commentInRDBMS><![CDATA[The street id]]></commentInRDBMS>
+<generatorID>0A448A00-3D73-5D34-AFCB-1B85BE36C6B5</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<referedAttribute>1C0218ED-B9F8-6086-A803-3A59D2934BCD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="author_name " id="23D70661-4A27-3D9B-AB30-7F85A21DEAB6">
+<createdBy>student</createdBy>
+<createdTime>2023-05-02 08:42:13 UTC</createdTime>
+<commentInRDBMS><![CDATA[The authority name ]]></commentInRDBMS>
+<generatorID>0A448A00-3D73-5D34-AFCB-1B85BE36C6B5</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<referedAttribute>ABC473B4-43CD-F56C-557C-78A5C0D3FF95</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ct.no" id="A3195F95-74EB-9975-302E-3C9DFA97999B">
+<createdBy>student</createdBy>
+<createdTime>2023-05-02 23:31:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[collection surrogate key]]></commentInRDBMS>
+<generatorID>F89FBB44-4898-9FE6-6F38-CEC5F41BD733</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<referedAttribute>84160C33-E2CA-20FA-CA08-B9674F931FCA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bin_size" id="E7AB8C36-13EE-2F56-517C-C6201BB97C90">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 00:45:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[the size of type of bin]]></commentInRDBMS>
+<generatorID>7ED27B81-D44C-C7F2-C8EF-4336DB032F4D</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<referedAttribute>DB49A183-1813-C750-F8AF-B0D041760414</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="waste_type_id" id="01A5E14A-D1FC-9F41-CA03-509B2098F4A9">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 00:45:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Waste type id ]]></commentInRDBMS>
+<generatorID>7ED27B81-D44C-C7F2-C8EF-4336DB032F4D</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<referedAttribute>862ADEDC-ADDA-0E95-5CFA-C14D66AE7E55</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A619705A-7936-7277-A283-76D68CE3251A" name="BIN PK">
+<createdBy>student</createdBy>
+<createdTime>2023-04-30 14:23:40 UTC</createdTime>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>00EDD954-F49F-1335-B16C-5BABE94F8A1F</attributeRef>
+<attributeRef>E7AB8C36-13EE-2F56-517C-C6201BB97C90</attributeRef>
+<attributeRef>01A5E14A-D1FC-9F41-CA03-509B2098F4A9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

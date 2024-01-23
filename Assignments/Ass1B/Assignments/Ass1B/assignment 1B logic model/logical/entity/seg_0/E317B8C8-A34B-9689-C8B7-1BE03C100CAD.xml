@@ -1,0 +1,155 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E317B8C8-A34B-9689-C8B7-1BE03C100CAD" name="CONTRACT COLLECTION ">
+<createdBy>student</createdBy>
+<createdTime>2023-04-30 14:27:32 UTC</createdTime>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ct.no" id="84160C33-E2CA-20FA-CA08-B9674F931FCA">
+<createdBy>student</createdBy>
+<createdTime>2023-05-02 23:29:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[collection surrogate key]]></commentInRDBMS>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="contra_collect_cost" id="FE2B5BFC-7116-8806-C04B-133BBAB9F85E">
+<createdBy>student</createdBy>
+<createdTime>2023-04-30 14:28:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[The waste collection cost]]></commentInRDBMS>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="contra_no" id="29D88D32-3D2A-DA1D-6FAB-652E527CD379">
+<createdBy>student</createdBy>
+<createdTime>2023-05-02 03:10:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[contract number]]></commentInRDBMS>
+<generatorID>2D7F4FB6-8D18-7E61-6A03-06484873F3D7</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<referedAttribute>6F8D9E2E-9C6E-DBC8-0C8A-191CAFE6D190</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="contra_collect_date" id="F0BDEEE0-65DB-03D9-5B5A-81023CD15440">
+<createdBy>student</createdBy>
+<createdTime>2023-05-02 03:18:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[bin collection date ]]></commentInRDBMS>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="truck_vin" id="F5549E9C-1F7F-AEC6-76E2-F118AEC11270">
+<createdBy>student</createdBy>
+<createdTime>2023-05-02 03:29:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[Truck's vin]]></commentInRDBMS>
+<generatorID>1DC638E3-BA0A-9092-1E69-19E89F2A2828</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<referedAttribute>69A3A4E3-B55A-CF58-5C76-7B28BC3C4B6B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="driver_no" id="EA36D43F-BB76-09D5-235B-EB3139678D98">
+<createdBy>student</createdBy>
+<createdTime>2023-05-02 03:30:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[Driver number]]></commentInRDBMS>
+<generatorID>B2F6D44E-EA21-F641-3FB2-2D9014C5AFE2</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<referedAttribute>68FFD5F5-29D1-3AA4-3A4C-6A55043DE33E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="waste_type_id" id="F8DC697B-75B2-BE59-FAA2-121040EBFDE2">
+<createdBy>student</createdBy>
+<createdTime>2023-05-02 23:38:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Waste type id ]]></commentInRDBMS>
+<generatorID>F0D083B1-9446-7BDD-77A9-AAB1BAEEAACE</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<referedAttribute>EA1F5C66-FF66-A52A-D72D-7D5EC65688A2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8DA78BD2-B95A-389E-559C-AD0B7933256D" name="CONTRACT COLLECTION COST PK">
+<createdBy>student</createdBy>
+<createdTime>2023-04-30 14:36:19 UTC</createdTime>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>84160C33-E2CA-20FA-CA08-B9674F931FCA</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="8CEB120D-304E-3642-53D4-52C7CBD99729" name="collection no_nk">
+<createdBy>student</createdBy>
+<createdTime>2023-05-02 23:49:00 UTC</createdTime>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="false"/>
+</engineerTo>
+<newElementsIDs>29D88D32-3D2A-DA1D-6FAB-652E527CD379,F0BDEEE0-65DB-03D9-5B5A-81023CD15440,F8DC697B-75B2-BE59-FAA2-121040EBFDE2</newElementsIDs>
+<usedAttributes>
+<attributeRef>29D88D32-3D2A-DA1D-6FAB-652E527CD379</attributeRef>
+<attributeRef>F0BDEEE0-65DB-03D9-5B5A-81023CD15440</attributeRef>
+<attributeRef>F8DC697B-75B2-BE59-FAA2-121040EBFDE2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

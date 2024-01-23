@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="DF40B4A2-53FC-0BE8-BE2E-2FA575DB16FD" containerWithKeyObject="EFB25063-2F80-9938-13C5-8D167AB14946" localFKIndex="AFB62E6E-CED9-2AE3-D8D9-8758EAB3ECAA" name="Binype_to_bin">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:07:48 UTC</createdTime>
+<generatorID>7ED27B81-D44C-C7F2-C8EF-4336DB032F4D</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<referredTableLongName>BIN_TYPE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>42ADFDDE-5E27-960F-3890-D57F00508D85</referredTableID>
+<keyObject>E5711C07-383E-AD74-BAB4-59D45957B031</keyObject>
+<referredKeyID>E5711C07-383E-AD74-BAB4-59D45957B031</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>bin_size,waste_type_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

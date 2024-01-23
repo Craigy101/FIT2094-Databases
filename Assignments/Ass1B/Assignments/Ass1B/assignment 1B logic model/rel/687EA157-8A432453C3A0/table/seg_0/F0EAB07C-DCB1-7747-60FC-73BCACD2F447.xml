@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F0EAB07C-DCB1-7747-60FC-73BCACD2F447" name="Driver_Truck_Lists">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:13:56 UTC</createdTime>
+<generatorID>732FDFF2-AC76-DF7D-194B-88BCD09CFCA3</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="truck_vin" id="07F3C7F9-A7FD-C9B8-ECE5-625321DF3AE1">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:13:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Truck's vin]]></commentInRDBMS>
+<generatorID>63736717-3F19-3AF9-FC1E-3651FD8DDBFA</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CDF25BA9-1394-D23A-CCE3-4B7A8C0F2445" referredColumn="BA942392-68E7-7D6D-94E0-0D3A62254142"/>
+</associations>
+</Column>
+<Column name="driver_no" id="E9159C08-DEF6-DFFF-97AC-E39C86A4D021">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:13:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Driver number]]></commentInRDBMS>
+<generatorID>9596AA41-586C-8FA3-B281-7B893EC7CF09</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D80B338E-31F1-B45C-4AF3-5257EB141B58" referredColumn="FAE9BE35-E4A5-55FB-4E53-727664932E52"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A797B6EE-C953-EC79-1373-A8F16DF272AF" name="Driver_Truck_PK">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:13:56 UTC</createdTime>
+<generatorID>2715D9CB-6C51-7F51-3914-FC8335253C5A</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="07F3C7F9-A7FD-C9B8-ECE5-625321DF3AE1"/>
+<colUsage columnID="E9159C08-DEF6-DFFF-97AC-E39C86A4D021"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5E53C1C4-B861-DF50-0B9D-BA022BA33B4E" name="Relation_22">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:13:56 UTC</createdTime>
+<generatorID>28D663B3-C529-1AA5-6D66-6DAB2FEEB910</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="07F3C7F9-A7FD-C9B8-ECE5-625321DF3AE1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7955F16C-D5C2-47BC-51A2-A6C2486BA03B" name="Relation_23">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 01:13:56 UTC</createdTime>
+<generatorID>B4B1A60E-B449-4223-6EF9-C6B297B6CF7D</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E9159C08-DEF6-DFFF-97AC-E39C86A4D021"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

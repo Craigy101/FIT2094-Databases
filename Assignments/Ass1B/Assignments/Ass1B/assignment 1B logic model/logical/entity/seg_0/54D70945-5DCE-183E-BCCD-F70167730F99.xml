@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="54D70945-5DCE-183E-BCCD-F70167730F99" name="OWNER_OF_PROPERTY">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 00:47:08 UTC</createdTime>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="owner_id" id="9DBF6245-1944-A989-CD48-7DF67C08CD23">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 00:49:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Owner id ]]></commentInRDBMS>
+<generatorID>CE321A6B-6B6E-89DE-1713-CFA6139FB2F0</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<referedAttribute>9E6D46EB-EDED-4278-41A1-3DE736DF513F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="property_id" id="C765CE1A-27B4-9236-4289-6E7F0AB1EE63">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 00:54:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[Property id number ]]></commentInRDBMS>
+<generatorID>3D2E914E-FDDC-A886-41F2-312C3220C2AE</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<referedAttribute>33544627-02B0-C000-45FF-D17B4FFC5C39</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="street_id" id="0BDD0C57-632B-D44F-673A-6153D5EDCE51">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 00:54:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[The street id]]></commentInRDBMS>
+<generatorID>3D2E914E-FDDC-A886-41F2-312C3220C2AE</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<referedAttribute>1C0218ED-B9F8-6086-A803-3A59D2934BCD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="author_name " id="A55232D3-B832-57BE-2B50-A5EDF8662BCF">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 00:54:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[The authority name ]]></commentInRDBMS>
+<generatorID>3D2E914E-FDDC-A886-41F2-312C3220C2AE</generatorID>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="true"/>
+</engineerTo>
+<referedAttribute>ABC473B4-43CD-F56C-557C-78A5C0D3FF95</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C793F564-19DB-323A-6D5D-6E6CC5ADDFEF" name="OWNER_LIST PK">
+<createdBy>g</createdBy>
+<createdTime>2023-05-03 00:49:29 UTC</createdTime>
+<ownerDesignName>assignment 1B logic model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="687EA157-6ECD-4327-B1E8-8A432453C3A0" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9DBF6245-1944-A989-CD48-7DF67C08CD23</attributeRef>
+<attributeRef>C765CE1A-27B4-9236-4289-6E7F0AB1EE63</attributeRef>
+<attributeRef>0BDD0C57-632B-D44F-673A-6153D5EDCE51</attributeRef>
+<attributeRef>A55232D3-B832-57BE-2B50-A5EDF8662BCF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
