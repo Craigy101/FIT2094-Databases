@@ -1,0 +1,68 @@
+SQL> 
+SQL> --****PLEASE ENTER YOUR DETAILS BELOW****
+SQL> --sql_portfolio2_basic.sql
+SQL> 
+SQL> --Student ID: 30613043
+SQL> --Student Name: Grant Fullston
+SQL> --Unit Code:FIT2094
+SQL> --Applied Class No:A09
+SQL> 
+SQL> 
+SQL> /*1*/
+SQL> SELECT
+  2  MAINT_ID ,
+  3  MAINT_DATETIME ,
+  4  PROP_ADDRESS,
+  5  OWNER_GIVNAME/*TODO: TRY CONCACTENATE*/
+  6      || ' '
+  7      || OWNER_FAMNAME AS owner_fullname,
+  8  MAINT_DESC,
+  9  MAINT_COST
+ 10  FROM
+ 11      rent.maintenance m
+ 12      JOIN rent.property p ON m.prop_no = p.prop_no
+ 13      JOIN rent.owner o ON o.owner_no = p.owner_no
+ 14  
+ 15  WHERE
+ 16      maint_cost>1000 
+ 17      AND maint_cost<3000 
+ 18      AND  UPPER(maint_assigned) LIKE 'Y'
+ 19  ORDER BY
+ 20      maint_cost DESC, maint_datetime;
+SQL> 
+SQL> 
+SQL> 
+SQL> /*2*/
+SQL> -- PLEASE PLACE REQUIRED SQL STATEMENT FOR THIS PART HERE
+SQL> -- ENSURE that your query is formatted and has a semicolon
+SQL> -- (;) at the end of this answer
+SQL> 
+SQL> SELECT
+  2  rent_agreement_no,
+  3  r.tenant_no,
+  4  tenant_givname
+  5      || ' '
+  6      || tenant_famname AS tenant_name,
+  7  prop_address,
+  8  OWNER_GIVNAME
+  9      || ' '
+ 10      || OWNER_FAMNAME AS owner_fullname,
+ 11  rent_lease_period
+ 12      || ' '
+ 13      || 'months' AS rent_lease_period
+ 14  FROM
+ 15      rent.rent r
+ 16      JOIN rent.tenant t ON r.tenant_no = t.tenant_no
+ 17      JOIN rent.property p ON r.prop_no = p.prop_no
+ 18      JOIN rent.owner o ON o.owner_no = p.owner_no
+ 19  WHERE
+ 20  
+ 21  SUBSTR(to_char(rent_lease_start,'DD/MM/YY'),7,2) LIKE '22'
+ 22  AND 
+ 23  rent_weekly_rate<425
+ 24  AND
+ 25  rent_lease_period>5;
+SQL> 
+SQL> 
+SQL> --Comment out SET ECHO and SPOOL commands before submitting your portfolio
+SQL> SPOOL OFF

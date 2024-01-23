@@ -1,0 +1,273 @@
+SQL> 
+SQL> --sql_portfolio1.sql
+SQL> 
+SQL> --Student ID: 30613043
+SQL> --Student Name: Grant Fullston
+SQL> --Unit Code: FIT2094
+SQL> --Applied Class No: A09 
+SQL> 
+SQL> 
+SQL> /*Task 1: CREATE table POLICY and non FK constraints*/
+SQL> DROP TABLE policy CASCADE CONSTRAINTS PURGE;
+
+Table POLICY dropped.
+
+SQL> 
+SQL> CREATE TABLE policy (
+  2      policy_id      NUMBER(7) NOT NULL,
+  3      prop_no        NUMBER(4) NOT NULL,
+  4      policy_startdate DATE NOT NULL,
+  5      policy_type_code CHAR(1) NOT NULL,
+  6      policy_length NUMBER(3) NOT NULL,
+  7      insurer_code CHAR(3) NOT NULL,
+  8      CONSTRAINT policy_uq UNIQUE ( prop_no, policy_startdate, policy_type_code )
+  9  );
+
+Table POLICY created.
+
+SQL> 
+SQL> ALTER TABLE policy ADD CONSTRAINT policyr_pk PRIMARY KEY ( policy_id );
+
+Table POLICY altered.
+
+SQL> 
+SQL> COMMENT ON COLUMN policy.policy_id IS
+  2      'Unique identifier for policy';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN policy.prop_no IS
+  2      'Unique 4 digit identifier property number';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN policy.policy_startdate IS
+  2      'Unique policy start date';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN policy.policy_type_code IS
+  2      'Type of policy unique code';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN policy.policy_length IS
+  2      'policy length';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN policy.insurer_code IS
+  2      'unique insurer code';
+
+Comment created.
+
+SQL> /*Task 1: Add FK constraints*/
+SQL> 
+SQL> /* Default on delete being no action for foreign keys means we don't need to specify*/
+SQL> 
+SQL> ALTER TABLE policy
+  2      ADD CONSTRAINT property_number FOREIGN KEY ( prop_no )
+  3          REFERENCES property ( prop_no ) ;
+
+Table POLICY altered.
+
+SQL> 
+SQL> ALTER TABLE policy
+  2      ADD CONSTRAINT policy_type_code FOREIGN KEY ( policy_type_code )
+  3           REFERENCES policy_type ( policy_type_code ) ;
+
+Table POLICY altered.
+
+SQL> 
+SQL> ALTER TABLE policy
+  2      ADD CONSTRAINT insuer_code FOREIGN KEY ( insurer_code )
+  3          REFERENCES insurer ( insurer_code ) ;
+
+Table POLICY altered.
+
+SQL> 
+SQL> 
+SQL> commit;
+
+Commit complete.
+
+SQL>  /*Commit often before inserts so that there is access to the table for other users*/
+SQL> 
+SQL> 
+SQL> /*Task 2*/
+SQL> 
+SQL> DROP SEQUENCE policy_seq;
+
+Sequence POLICY_SEQ dropped.
+
+SQL> 
+SQL> CREATE SEQUENCE policy_seq START WITH 1 INCREMENT BY 1;
+
+Sequence POLICY_SEQ created.
+
+SQL> /*TODO make this start at the last value from current*/
+SQL> 
+SQL> INSERT INTO policy VALUES (
+  2      policy_seq.NEXTVAL,
+  3      7145,
+  4      to_date('21-Apr-2023','dd-Mon-yyyy'),
+  5      (
+  6          SELECT
+  7              policy_type_code
+  8          FROM
+  9              policy_type
+ 10          WHERE
+ 11              upper(policy_type_desc) = upper('Building')
+ 12      ),
+ 13      12,
+ 14      (
+ 15          SELECT
+ 16              insurer_code
+ 17          FROM
+ 18              insurer
+ 19          WHERE
+ 20              upper(insurer_name) = upper('Landlord Association')
+ 21      ) 
+ 22  );
+
+1 row inserted.
+
+SQL> 
+SQL> INSERT INTO policy VALUES (
+  2      policy_seq.NEXTVAL,
+  3      9346,
+  4      to_date('21-Apr-2023','dd-Mon-yyyy'),
+  5      (
+  6          SELECT
+  7              policy_type_code
+  8          FROM
+  9              policy_type
+ 10          WHERE
+ 11              upper(policy_type_desc) = upper('Building')
+ 12      ),
+ 13      12,
+ 14      (
+ 15          SELECT
+ 16              insurer_code
+ 17          FROM
+ 18              insurer
+ 19          WHERE
+ 20              upper(insurer_name) = upper('Landlord Association')
+ 21      ) 
+ 22  );
+
+1 row inserted.
+
+SQL> 
+SQL> commit;
+
+Commit complete.
+
+SQL>  /*Commit often, this marks one transaction*/
+SQL> 
+SQL> /*Task 3*/
+SQL> 
+SQL> UPDATE policy
+  2  SET
+  3      policy_length = policy_length + 6
+  4  WHERE
+  5      prop_no = 7145
+  6      AND
+  7      to_date('21-Apr-2023','dd-Mon-yyyy')= policy_startdate
+  8      AND
+  9      (
+ 10          SELECT
+ 11              policy_type_code
+ 12          FROM
+ 13              policy_type
+ 14          WHERE
+ 15              upper(policy_type_desc) = upper('Building')
+ 16      ) = policy_type_code;
+
+1 row updated.
+
+SQL> 
+SQL> INSERT INTO policy VALUES (
+  2      policy_seq.NEXTVAL,
+  3      7145,
+  4      to_date('01-May-2023','dd-Mon-yyyy'),
+  5      (
+  6          SELECT
+  7              policy_type_code
+  8          FROM
+  9              policy_type
+ 10          WHERE
+ 11              upper(policy_type_desc) = upper('Contents')
+ 12      ),
+ 13      12,
+ 14      (
+ 15          SELECT
+ 16              insurer_code
+ 17          FROM
+ 18              insurer
+ 19          WHERE
+ 20              upper(insurer_name) = upper('Landlord Association')
+ 21      ) 
+ 22  );
+
+1 row inserted.
+
+SQL> commit;
+
+Commit complete.
+
+SQL>  /*Commit often, this marks one transaction*/
+SQL> 
+SQL> 
+SQL> /*Task 4*/
+SQL> DELETE FROM policy
+  2  WHERE
+  3      prop_no = 7145
+  4      AND
+  5      to_date('01-May-2023','dd-Mon-yyyy')= policy_startdate
+  6      AND
+  7      (
+  8          SELECT
+  9              policy_type_code
+ 10          FROM
+ 11              policy_type
+ 12          WHERE
+ 13              upper(policy_type_desc) = upper('Contents')
+ 14      ) = policy_type_code;
+
+1 row deleted.
+
+SQL> 
+SQL> UPDATE policy
+  2  SET
+  3      policy_length = policy_length - 6
+  4  WHERE
+  5      prop_no = 7145
+  6      AND
+  7      to_date('21-Apr-2023','dd-Mon-yyyy')= policy_startdate
+  8      AND
+  9      (
+ 10          SELECT
+ 11              policy_type_code
+ 12          FROM
+ 13              policy_type
+ 14          WHERE
+ 15              upper(policy_type_desc) = upper('Building')
+ 16      ) = policy_type_code;
+
+1 row updated.
+
+SQL> 
+SQL> commit;
+
+Commit complete.
+
+SQL>  /*Commit often, this marks one transaction*/
+SQL> 
+SQL> --Comment out SET ECHO and SPOOL commands before submitting your portfolio
+SQL> SPOOL OFF
